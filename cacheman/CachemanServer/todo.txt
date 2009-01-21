@@ -1,0 +1,10 @@
+﻿p0
+--
+- Client code to talk to multiple servers (pooling?)
+- Flush
+
+p1
+
+- Get back to 25K reqs a second
+- Get rid of locking on reads
+- Lock down on valid key formats. Keys which contain whitespace or \r\n will cause us to choke (right now, we convert spaces to (char)0
